@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="faviconio/icon.png">
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Core Computer Knowledge | Computer Generations & Basics</title>
+
+<style>
+:root{
+    --bg-gradient-dark: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    --bg-gradient-light: linear-gradient(135deg,#e0eafc,#cfdef3,#e0eafc);
+    --text-dark:#fff;
+    --text-light:#000;
+    --card-bg-dark: rgba(255,255,255,0.12);
+    --card-bg-light: rgba(0,0,0,0.08);
+    --nav-bg-dark:#000;
+    --nav-bg-light:#f0f0f0;
+    --link-color-dark:#00ffff;
+    --link-color-light:#0077cc;
+}
+
+body{
+    background:var(--bg-gradient-dark);
+    color:var(--text-dark);
+    line-height:1.6;
+    transition:all 0.4s ease;
+}
+header{
+    text-align:center;
+    padding:30px 15px;
+}
+header h1{
+    font-size:32px;
+    color:var(--link-color-dark);
+}
+header p{
+    opacity:0.9;
+}
+nav{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    background:var(--nav-bg-dark);
+    padding:12px;
+    position:sticky;
+    top:0;
+    z-index:10;
+    transition:all 0.4s ease;
+}
+nav a{
+    color:var(--link-color-dark);
+    text-decoration:none;
+    font-weight:bold;
+}
+.card{
+    width:90%;
+    max-width:900px;
+    margin:30px auto;
+    background:var(--card-bg-dark);
+    padding:20px;
+    border-radius:15px;
+    transition:all 0.4s ease;
+}
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+.card h2{color:var(--link-color-dark);}
+.card h3{color:#ffd700;margin-top:12px;}
+.card ul{padding-left:20px;}
+footer{
+    background:var(--nav-bg-dark);
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+    transition:all 0.4s ease;
+}
+
+/* Floating Menu */
+.floating-nav{
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    background:rgba(0,0,0,0.9);
+    width:220px;
+    padding:15px;
+    border-radius:15px;
+}
+.floating-nav h4{
+    color:var(--link-color-dark);
+    margin-bottom:10px;
+}
+.latest{
+    background:rgba(255,255,255,0.1);
+    padding:8px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+.floating-nav button{
+    width:100%;
+    background:none;
+    border:none;
+    color:var(--link-color-dark);
+    text-align:left;
+    padding:6px 0;
+    font-weight:bold;
+    cursor:pointer;
+}
+.floating-nav button:hover{color:#fff;}
+
+/* Pages */
+#blogsPage,#aboutPage{
+    display:none;
+    padding:40px 20px;
+}
+.blogs-container{
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+.blog-box{
+    background:var(--card-bg-dark);
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    transition:all 0.4s ease;
+}
+.blog-box h3{color:var(--link-color-dark);}
+.blog-box.empty{
+    opacity:0.6;
+    cursor:not-allowed;
+}
+.blog-box.active{
+    cursor:pointer;
+}
+.blog-box.active:hover{background:rgba(255,255,255,0.2);}
+
+@media(max-width:600px){
+    header h1{font-size:22px;}
+    .floating-nav{width:180px;}
+}
+
+/* Light Mode Styles */
+body.light-mode{
+    background:var(--bg-gradient-light);
+    color:var(--text-light);
+}
+body.light-mode header h1,
+body.light-mode nav a,
+body.light-mode .floating-nav h4,
+body.light-mode .floating-nav button,
+body.light-mode .blog-box h3,
+body.light-mode .card h2{
+    color:var(--link-color-light);
+}
+body.light-mode .card{
+    background:var(--card-bg-light);
+}
+body.light-mode nav, body.light-mode footer{
+    background:var(--nav-bg-light);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Core Computer Knowledge</h1>
+    <p>Understanding Computers from Fundamentals to Future Technologies</p>
+</header>
+
+<nav id="topNav">
+    <a href="#gen1">Gen 1</a>
+    <a href="#gen2">Gen 2</a>
+    <a href="#gen3">Gen 3</a>
+    <a href="#gen4">Gen 4</a>
+    <a href="#gen5">Gen 5</a>
+</nav>
+
+<!-- ================= FULL BLOG ================= -->
+<main id="mainBlog">
+
+<section id="gen1" class="card">
+<img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/19788287/image/medium-fa11aa36d936fc2b74bb6b5b496a11eb.png">
+<h2>First Generation Computers (1940–1956)</h2>
+<h3>Technology Used</h3>
+<p>Vacuum tubes were used as electronic switches and for memory storage. These machines marked the beginning of digital computing.</p>
+<h3>Characteristics</h3>
+<ul>
+<li>Room-sized machines</li>
+<li>Very high electricity consumption</li>
+<li>Excessive heat generation</li>
+<li>Low speed and reliability</li>
+</ul>
+<h3>Programming</h3>
+<p>Machine-level programming (binary code)</p>
+<h3>Examples</h3>
+<p>ENIAC, EDVAC, UNIVAC</p>
+</section>
+
+<section id="gen2" class="card">
+<img src="https://i.pinimg.com/originals/4a/9d/66/4a9d668f667f432aa581d84dbebfbbd1.jpg">
+<h2>Second Generation Computers (1956–1963)</h2>
+<p>Transistors replaced vacuum tubes, resulting in smaller, faster, and more reliable computers.</p>
+<h3>Features</h3>
+<ul>
+<li>Reduced size and power usage</li>
+<li>Improved processing speed</li>
+<li>Use of assembly and early high-level languages</li>
+</ul>
+<p><b>Languages:</b> COBOL, FORTRAN</p>
+</section>
+
+<section id="gen3" class="card">
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20240905142115/third.webp">
+<h2>Third Generation Computers (1964–1971)</h2>
+<p>Integrated Circuits (ICs) combined multiple transistors on a single chip, improving efficiency and performance.</p>
+<ul>
+<li>High speed and accuracy</li>
+<li>Introduction of operating systems</li>
+<li>Support for multiprogramming</li>
+</ul>
+</section>
+
+<section id="gen4" class="card">
+<img src="http://computerhistoryinformation.weebly.com/uploads/1/7/3/9/17399661/382598_orig.jpg">
+<h2>Fourth Generation Computers (1971–Present)</h2>
+<p>Microprocessors enabled personal computing and widespread computer usage.</p>
+<ul>
+<li>Compact and affordable systems</li>
+<li>Graphical User Interfaces (GUI)</li>
+<li>Networking and Internet usage</li>
+</ul>
+</section>
+
+<section id="gen5" class="card">
+<img src="https://i0.wp.com/www.informationq.com/wp-content/uploads/2015/08/Fifth-Generation-Computer.jpg">
+<h2>Fifth Generation Computers (Present & Future)</h2>
+<p>This generation focuses on intelligent systems capable of learning and decision-making.</p>
+<ul>
+<li>Artificial Intelligence and Machine Learning</li>
+<li>Natural Language Processing</li>
+<li>Robotics and Quantum Computing</li>
+</ul>
+</section>
+
+</main>
+
+<!-- ================= ALL BLOGS ================= -->
+<section id="blogsPage">
+<h2 style="text-align:center;color:#00ffff;">All Blogs</h2>
+<div class="blogs-container">
+<div class="blog-box active" onclick="showHome()">
+<h3>Computer Generations</h3>
+<p>Read Full Blog</p>
+</div>
+<div class="blog-box empty">
+<h3>Programming Fundamentals</h3>
+<p>Coming Soon 🚧</p>
+</div>
+<div class="blog-box empty">
+<h3>AI & Future Computing</h3>
+<p>Coming Soon 🚧</p>
+</div>
+</div>
+</section>
+
+<!-- ================= ABOUT PAGE ================= -->
+<section id="aboutPage">
+<h2 style="text-align:center;color:#00ffff;">About Me</h2>
+<div class="card">
+<p>Hello, my name is <b>Darsh Rangwala</b>.</p>
+<p>
+I am a passionate learner with a strong interest in computer science and modern technologies.
+This blog, <b>Core Computer Knowledge</b>, is created purely for educational purposes to help students
+understand computer concepts clearly and effectively.
+</p>
+<p>
+<b>Email:</b> darshrangwala@gmail.com<br>
+<b>Contact Number:</b> 9313846228
+</p>
+<p>Thank you for visiting and supporting my learning journey.</p>
+</div>
+</section>
+
+<!-- ================= FLOATING MENU ================= -->
+<div class="floating-nav">
+<h4>📌 Menu</h4>
+<div class="latest">
+<b>Latest Blog</b>
+<p>Computer Generations</p>
+</div>
+<button onclick="showHome()">🏠 Home</button>
+<button onclick="showBlogs()">📚 All Blogs</button>
+<button onclick="showAbout()">ℹ️ About</button>
+<button onclick="toggleTheme()">🌓 Dark/Light</button>
+</div>
+
+<footer>
+<p>© 2026 Core Computer Knowledge | Educational Blog</p>
+</footer>
+
+<script>
+function showBlogs(){
+    mainBlog.style.display="none";
+    aboutPage.style.display="none";
+    blogsPage.style.display="block";
+    topNav.style.display="none";
+    scrollTo(0,0);
+}
+function showHome(){
+    blogsPage.style.display="none";
+    aboutPage.style.display="none";
+    mainBlog.style.display="block";
+    topNav.style.display="flex";
+}
+function showAbout(){
+    mainBlog.style.display="none";
+    blogsPage.style.display="none";
+    aboutPage.style.display="block";
+    topNav.style.display="none";
+    scrollTo(0,0);
+}
+
+// Dark/Light Mode Toggle
+function toggleTheme(){
+    document.body.classList.toggle("light-mode");
+}
+</script>
+
+</body>
+</html>
